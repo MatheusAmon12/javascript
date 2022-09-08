@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de velocidade</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velocidade: <input type="number" id="velocidade"> Km/h <input type="button" value="Enviar" onclick="teste()"></p>
+    
+    <div id="resultado"></div>
+
+    <script>
+        function teste(){
+            var txtvelocidade = window.document.getElementById('velocidade')
+            var velocidade = Number(txtvelocidade.value)
+            var resultado = document.getElementById('resultado')
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade}Km/h</strong>.</p>`
+            if (velocidade > 60){
+                resultado.innerHTML += `<p>Velocidade acima do limite. <strong>MULTADO</strong></p>`
+            }
+            resultado.innerHTML += `<p>Utilize <strong>sempre</strong> o cinto de segurança</p>`
+        }
+    </script>
+
+</body>
+</html>
