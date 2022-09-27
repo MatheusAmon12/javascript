@@ -9,7 +9,7 @@ function verificar(){
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img')
+        var img = document. ('img')
         img.setAttribute('id', 'foto')
         if (fsex[0].checked){
             genero = 'Homem'
