@@ -30,6 +30,16 @@ div{
     padding: 15px;
     text-align: left;
 }
+div p{
+    margin-bottom: 15px;
+}
+
+div > button{
+    cursor: pointer;
+}
+#ilista{
+    width: 200px;
+}
 footer{
     margin-top: 20px;
     color: white;

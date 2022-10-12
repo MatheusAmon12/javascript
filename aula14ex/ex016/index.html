@@ -9,20 +9,26 @@
 </head>
 <body onload="carregar()" id="fundo">
     <header>
-        <h1>Tabuada</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div id="tabuada">
+        <div id="dados">
             <p>
-                <label for="itabuada">Número</label>
-                <input type="number" placeholder="Ex.: 5" name="tabuada" id="itabuada">
-                <button onclick="multiplicar()" style="cursor: pointer;">Gerar tabuada</button>
+                <label for="iinicio">Início: </label>
+                <input type="number" name="inicio" id="iinicio">
             </p>
+            <p>
+                <label for="ifim">Fim: </label>
+                <input type="number" name="fim" id="ifim">
+            </p>
+            <p>
+                <label for="ipasso">Passo: </label>
+                <input type="number" name="passo" id="ipasso">
+            </p>
+            <button onclick="contar()">Contar</button>
         </div>
         <div id="resultado">
-            <select name="produto" id="iproduto" size="10">
-                <option value="">Digite um número acima</option>
-            </select>
+    
         </div>
     </section>
     <footer>

@@ -1,21 +1,17 @@
-function carregar(){
-    var msg = window.document.getElementById('msg');
-    var imagem = window.document.getElementById('foto');
-    var data = new Date();
-    var hora = data.getHours();
-    msg.innerHTML = `Agora são <strong>${hora} horas</strong>`
-    if (hora >= 0 && hora < 12){
-        imagem.src = 'imagens/manha.png'
-        document.body.style.background = '#FBA85E'
-        msg.innerHTML += '<br><strong>Bom dia!</strong>'
+function multiplicar(){
+    var num = document.getElementById('itabuada')
+    var resultado = document.getElementById('iproduto')
 
-    }else if (hora >= 12 && hora < 18){
-        imagem.src = 'imagens/tarde.png'
-        document.body.style.background = '#BC6144'
-        msg.innerHTML += '<br><strong>Boa tarde!</strong>'
-    }else{
-        imagem.src = 'imagens/noite.png'
-        document.body.style.backgroundd = '#130A1D'
-        msg.innerHTML += '<br><strong>Boa noite!</strong>'
+    if (num.value.length == 0){
+        window.alert('[ERRO] Preencha o campo')
+    } else{
+        var num_convertido = Number(num.value)
+        resultado.innerHTML = ''
+        for (c = 1; c <=10; c ++){
+            var multiplicacao = c * num_convertido
+            let item = document.createElement('option')
+            item.text = `${num_convertido} x ${c} = ${multiplicacao}`
+            resultado.appendChild(item)
+        }
     }
 }
