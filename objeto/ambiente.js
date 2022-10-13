@@ -31,7 +31,9 @@ console.log(imc.toFixed(2))
 pessoa.nome = ['Matheus Amon']
 console.log(pessoa.nome)
 
-produtos.descricao = ['Arroz'] //nesse caso o obejto produtos está vazio, então fazer isso resultado em uma inserção, mas se feita numa segunda vez os dados anteriores serão sobrescritos, pois como dentro da key existe um array a posição de inserção sempre será o índice 0. Para contornar basta usar o spreed
+produtos.descricao = ['Arroz'] /*nesse caso o obejto produtos está vazio, então fazer isso resultado em uma inserção, 
+mas se feita numa segunda vez os dados anteriores serão sobrescritos, pois como dentro da key existe um array a posição 
+de inserção sempre será o índice 0. Para contornar basta usar o spreed*/
 produtos.preco = [19.99]
 console.log(produtos)
 
