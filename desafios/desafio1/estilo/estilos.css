@@ -52,9 +52,15 @@
     transform: translate(-50%, -50%);
 }
 
+
+/*mensagem do dia*/
+@font-face {
+    font-family: 'Typewriter';
+    src: url('../fonts/elegant_typewriter_regular.ttf') format('truetype');
+}
 .papel{
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 350px;
     background: red;
     border-radius: 0px 10px 0px 10px;
 }
@@ -69,5 +75,8 @@
 
 #txt{
     margin-top: 20px;
-    width: 300px;
+    width: 340px;
+    font: 25px 'Typewriter';
+    position: relative;
+    left: 45%;
 }
