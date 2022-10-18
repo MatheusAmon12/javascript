@@ -26,17 +26,26 @@ document.write (`<div class="container">
                     </div>
                 </div>`)
 
+//Parte II
 let data = new Date()
 let dia = data.getDay()
 let mes = data.getMonth()
 let ano = data.getFullYear()
 
 document.write (`<div class="papel">
-                    <h1 id="titulo">Mensagem do dia</h1>
+                    <h1 id="titulo">Frase do dia</h1>
                     <p id="data">${dia}/${mes}/${ano}</p>
                     <p id="txt">"Seja curioso. Leia de tudo. Tente coisas novas. O que as pessoas chamam de inteligência se resume a curiosidade."</p>
                     <p id="autor">Aaron Swartz</p>
                 </div>
 `)
 
+//Parte III
+let meses = ['Janeiro', ' Fevereiro', ' Março', ' Abril', ' Maio', ' Junho', ' Julho', ' Agosto', ' Setembro', ' Outubro', ' Novembro', ' Dezembro']
+
+document.write(`<div id = 'fundo'>
+                    <h1 id='titulo_2'>Array de Meses do Ano</h1>
+                    <p id='meses'>${meses}</p>
+                </div>
+`)
 

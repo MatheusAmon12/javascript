@@ -12,6 +12,7 @@
     border-radius: 10px;
     width: 380px;
     height: auto;
+    margin-bottom: 25px;
 }
 
 .titulo{
@@ -60,23 +61,49 @@
 }
 .papel{
     width: 550px;
-    height: 350px;
-    background: red;
+    height: 390px;
+    background: url('..//imagens/papel.jpg');
+    background-size: cover;
     border-radius: 0px 10px 0px 10px;
+    margin-bottom: 25px;
 }
 
 #titulo{
     padding: 15px;
+    font: 40px 'Typewriter';
 }
 
 #data{
     padding-left: 15px;
+    font: 20px 'Typewriter';
 }
 
 #txt{
     margin-top: 20px;
-    width: 340px;
-    font: 25px 'Typewriter';
+    width: 370px;
+    font: 30px 'Typewriter';
     position: relative;
-    left: 45%;
+    left: 25%;
+}
+
+#autor{
+    margin-top: 20px;
+    position: relative;
+    left: 60%;
+    font: 20px 'Typewriter';
+}
+/*Meses do ano*/
+#fundo{
+    background: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 450px;
+}
+#titulo_2{
+    font: bold 14pt Arial, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+#meses{
+    padding-bottom: 25px;
+    padding-left: 20px;
 }
