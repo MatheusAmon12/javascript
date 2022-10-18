@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    height: 300vh;
+}
 .container{
     background-color: rgb(26, 25, 25);
     border: 4px solid gray;
@@ -97,6 +99,7 @@
     background: whitesmoke;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     width: 450px;
+    margin-bottom: 25px;
 }
 #titulo_2{
     font: bold 14pt Arial, Verdana, sans-serif;
@@ -106,4 +109,48 @@
 #meses{
     padding-bottom: 25px;
     padding-left: 20px;
+}
+
+/*Cartão de jogo*/
+#cartao{
+    width: 400px;
+    height: 350px;
+    background: url('../imagens/assassins_creed_4_black_flag_game-wide-600x375.jpg');
+    background-size: cover;
+    border-radius:  10px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#titulo_jogo{
+    padding: 20px;
+    font: bold 30px Arial;
+}
+
+.entrada{
+    background-color: white;
+    width: 350px;
+    height: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#cartao label{
+    font: bold 13px Arial;
+    color: black;
+    position: relative;
+    left: 6%;
+}
+
+.texto_jogo{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+
+    padding-left: 15px;
+    font: 16px Arial;
 }

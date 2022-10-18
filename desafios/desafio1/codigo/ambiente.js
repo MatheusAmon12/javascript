@@ -49,3 +49,24 @@ document.write(`<div id = 'fundo'>
                 </div>
 `)
 
+//Parte IV
+let titulo = "Assassins Creed IV"
+let desenvolvedor = 'Ubsoft'
+let anoLancamento = 2013
+
+document.write (`<div id='cartao'>
+                        <h1 id='titulo_jogo'>Jogo</h1>
+                        <label for='titulo'>Título</label>
+                        <div class='entrada'>
+                            <p name='titulo' class='texto_jogo'>${titulo}</p>
+                        </div>
+                        <label for='desenv'>Desenvolvedor</label>
+                        <div class='entrada'>
+                            <p name='desenv' class='texto_jogo'>${desenvolvedor}</p>
+                        </div>
+                        <label for='ano'>Ano de lançamento</label>
+                        <div class='entrada'>
+                            <p name='ano' class='texto_jogo'>${anoLancamento}</p>
+                        </div>
+                    </div>`)
+
