@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body onload="carregou()" onscroll="rolouPagina()">
+    <main class="tela-principal">
+        <h1 id="titulo" onmouseover="focou()">Eventos DOM</h1>
+        <section class="conteudo"> 
+            <article class="box"></article>
+            <article class="box"></article>
+            <button id="btn1" class="botao">Box 1</button>
+            <button id="btn2" class="botao">Box 2</button>
+        </section>
+        <hr>
+        <form action="">
+            <input type="text" id="itexto" placeholder="Nome" onfocus="focoNoCampo()" onblur="semFocoNoCampo()" onkeypress="avisarQueTeclou()">
+            <button id="btn3" class="botao" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="codigo.js"></script>
+</body>
+</html>
