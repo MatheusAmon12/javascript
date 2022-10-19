@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">    
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div id="container">
+        <main class="ambiente">
+            <h1 id="titulo">Calculadora de IMC</h1>
+            <form action="" method="post" id="formulario">
+                <label for="inome" class="etiqueta">Nome</label><br>
+                <input type="text" name="nome" id="inome" class="entrada" required autofocus><br>
+                <label for="iidade" class="etiqueta">Idade</label><br>
+                <input type="number" name="idade" id="iidade" class="entrada" required min="0" max="130"><br>
+                <label for="ipeso" class="etiqueta">Peso</label><br>
+                <input type="number" name="peso" id="ipeso" class="entrada" min="0.0" step="0.01"><br>
+                <label for="ialtura" class="etiqueta">Altura</label><br>
+                <input type="number" name="altura" id="ialtura" class="entrada" min="0.0" step="0.01"><br>
+                <span>
+                    <button id="botaoEnviar" type="submit">Enviar</button>
+                    <button id="botaoReset" type="reset">Limpar</button>
+                </span>
+            </form>
+            <span>IMC
+                <input type="number" name="resultado" id="iresultado" disabled>
+                <span id="aviso"></span>
+            </span>
+        </main>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
