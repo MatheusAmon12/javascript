@@ -5,23 +5,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#container{
-    background-color: aqua;
+/*#0B132B #1C2541 #3A506B #00A9A5*/
+body{
+    background: #3A506B;
 }
-
-.ambiente{
-    background-color: blue;
-    max-width: 450px;
+#container{
+    background: #1C2541;
+    width: 450px;
     margin: auto;
 }
 
 #titulo{
-    font: bold 22pt Arial;
     padding: 20px;
 }
 
 #formulario{
-    background-color: red;
-}
 
+}

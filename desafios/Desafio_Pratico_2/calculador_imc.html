@@ -8,29 +8,46 @@
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <div id="container">
-        <main class="ambiente">
-            <h1 id="titulo">Calculadora de IMC</h1>
-            <form action="" method="post" id="formulario">
-                <label for="inome" class="etiqueta">Nome</label><br>
-                <input type="text" name="nome" id="inome" class="entrada" required autofocus><br>
-                <label for="iidade" class="etiqueta">Idade</label><br>
-                <input type="number" name="idade" id="iidade" class="entrada" required min="0" max="130"><br>
-                <label for="ipeso" class="etiqueta">Peso</label><br>
-                <input type="number" name="peso" id="ipeso" class="entrada" min="0.0" step="0.01"><br>
-                <label for="ialtura" class="etiqueta">Altura</label><br>
-                <input type="number" name="altura" id="ialtura" class="entrada" min="0.0" step="0.01"><br>
+    <main id="container">
+        <h1 id="titulo">Calculadora de IMC</h1>
+        <form action="" method="post" id="formulario">
+            <div class="entrada_dados">
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" class="input" required autofocus>
+            </div>
+            <div class="entrada_dados">
+                <label for="iidade">Idade</label><br>
+                <input type="number" name="idade" id="iidade" class="input" required min="0" max="130">
+            </div>
+            <div class="entrada_dados">
+                <label for="ipeso">Peso</label><br>
+                <input type="number" name="peso" id="ipeso" class="input" min="0.0" max="500.0" step="0.01">
+            </div>
+            <div class="entrada_dados">
+                <label for="ialtura">Altura</label><br>
+                <input type="number" name="altura" id="ialtura" class="input" min="0.0" max="2.80" step="0.01">
+            </div>
+            <div class="entrada_dados">
                 <span>
-                    <button id="botaoEnviar" type="submit">Enviar</button>
-                    <button id="botaoReset" type="reset">Limpar</button>
+                    <button id="btnEnviar" type="submit">Enviar</button>
+                    <button id="btnLimpar" type="reset">Limpar</button>
                 </span>
-            </form>
-            <span>IMC
-                <input type="number" name="resultado" id="iresultado" disabled>
+            </div>
+            <div class="entrada_dados">
+                <label for="iresultado">IMC</label>
+                <input type="number" name="resultado" id="iresultado" disabled value="0.0">
                 <span id="aviso"></span>
-            </span>
-        </main>
-    </div>
+            </div>
+        </form>
+        <div id="ficha">
+            <h2 id="id" class="pessoa">IMC</h2>
+            <p id="nome" class="pessoa"></p>
+            <p id="idade" class="pessoa"></p>
+            <p id="peso" class="pessoa"></p>
+            <p id="altura" class="pessoa"></p>
+            <p id="imc" class="pessoa"></p>
+        </div>
+    </main>
     <script src="codigo.js"></script>
 </body>
 </html>
