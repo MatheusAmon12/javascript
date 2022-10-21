@@ -32,29 +32,48 @@ body{
     width: 250px;
 }
 
-.entrada_dados{
-
-}
-
 .entrada_dados label{
     display: block;
     margin-top: 10px;
     color: white;
     font: lighter 1.2em 'Roboto', sans-serif;
 }
-.entrada_dados input{
+.entrada_dados input:not(#iresultado){
     width: 250px;
     height: 30px;
 }
+.entrada_dados #iresultado{
+    height: 36px;
+    width: 60px;
+}
+.entrada_dados #iresultado, #aviso{
+    margin-top: 20px;
+}
+.entrada_dados #iresultado::placeholder{
+    text-align: center;
+    font-size: 18px;
+}
+.entrada_dados #btnEnviar, #btnLimpar{
+    margin-top: 10px;
+    padding: 5px;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.entrada_dados > span button:hover{
+    background-color: #00A9A5;
+    
+}
+
 #ficha{
     width: 250px;
-    height: auto;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-#ficha h2{
+#ficha #id{
     font: bold 1.6em Arial, Helvetica, sans-serif;
+    height: 50px;
+    padding: 10px;
 }
 .pessoa{
     width: 250px;
