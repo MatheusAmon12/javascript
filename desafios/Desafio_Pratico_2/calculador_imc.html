@@ -10,7 +10,7 @@
 <body>
     <main id="container">
         <h1 id="titulo">Calculadora de IMC</h1>
-        <form action="" method="post" id="formulario">
+        <form action="teste.php" method="post" id="formulario">
             <div class="entrada_dados">
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="inome" class="input" required autofocus>
@@ -40,12 +40,12 @@
             </div>
         </form>
         <div id="ficha">
-            <h2 id="id" class="pessoa">IMC</h2>
+            <h2 id="id" class="pessoa" style="border-radius: 8px 8px 0px 0px;">IMC</h2>
             <p id="nome" class="pessoa"></p>
             <p id="idade" class="pessoa"></p>
             <p id="peso" class="pessoa"></p>
             <p id="altura" class="pessoa"></p>
-            <p id="imc" class="pessoa"></p>
+            <p id="imc" class="pessoa" style="border-radius: 0px 0px 8px 8px;"></p>
         </div>
     </main>
     <script src="codigo.js"></script>

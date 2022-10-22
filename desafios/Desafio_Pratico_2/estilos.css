@@ -9,19 +9,23 @@
 }
 /*#0B132B #1C2541 #3A506B #00A9A5*/
 body{
-    background: #3A506B;
+    background: url('imagens/fundo.jpg');
+    background-size: cover;
 }
 #container{
-    background: #1C2541;
+    background: linear-gradient(-45deg, #0DDE3D,#009121);
     width: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00912281;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left:3%;
+    transform: translate(0%, -50%);
 }
 
 #titulo{
-    padding: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
     color: white;
     font-size: 2.8em;
     font-weight: lighter;
@@ -29,22 +33,28 @@ body{
 
 #formulario{
     margin: auto;
-    width: 250px;
+    width: 350px;
 }
 
 .entrada_dados label{
     display: block;
     margin-top: 10px;
     color: white;
-    font: lighter 1.2em 'Roboto', sans-serif;
+    font: normal 1.2em 'Roboto', sans-serif;
 }
 .entrada_dados input:not(#iresultado){
-    width: 250px;
-    height: 30px;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15pt;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .entrada_dados #iresultado{
     height: 36px;
     width: 60px;
+    background-color: #02deaebb;
 }
 .entrada_dados #iresultado, #aviso{
     margin-top: 20px;
@@ -55,17 +65,19 @@ body{
 }
 .entrada_dados #btnEnviar, #btnLimpar{
     margin-top: 10px;
-    padding: 5px;
+    padding: 8px;
     font: normal 16px Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    border: none;
     cursor: pointer;
 }
 .entrada_dados > span button:hover{
-    background-color: #00A9A5;
-    
+    background-color: #009121;
+    color: white;  
 }
 
 #ficha{
-    width: 250px;
+    width: 350px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -76,12 +88,12 @@ body{
     padding: 10px;
 }
 .pessoa{
-    width: 250px;
+    width: 350px;
     height: 30px;
 }
 .pessoa:nth-child(odd){
     background-color: white;
 }
 .pessoa:nth-child(even){
-    background-color: #3A506B;
+    background-color: #009121;
 }
