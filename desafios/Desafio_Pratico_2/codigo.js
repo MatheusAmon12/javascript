@@ -31,12 +31,21 @@ botaoEnviar.addEventListener('click', function(event){
     }
 
     dadosFicha[1].textContent = pessoa.nome
-    dadosFicha[2].textContent = pessoa.idade
-    dadosFicha[3].textContent = pessoa.peso
-    dadosFicha[4].textContent = pessoa.altura
+    dadosFicha[2].textContent = pessoa.idade + ' anos'
+    dadosFicha[3].textContent = pessoa.peso + ' Kg'
+    dadosFicha[4].textContent = pessoa.altura + ' m'
     dadosFicha[5].textContent = pessoa.imc + " " + pessoa.situacao
 
     event.preventDefault()
+})
+
+botaoLimpar.addEventListener('click', function(event){
+    dadosFicha[1].textContent = ""
+    dadosFicha[2].textContent = ""
+    dadosFicha[3].textContent = ""
+    dadosFicha[4].textContent = ""
+    dadosFicha[5].textContent = ""
+    aviso.textContent = ""
 })
 
 function situacaoDoPeso(n){

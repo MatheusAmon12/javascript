@@ -7,16 +7,16 @@
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
 }
-/*#0B132B #1C2541 #3A506B #00A9A5*/
+/*#0B132B #1C2541 #3A506B #00A9A5 #35542A*/
 body{
-    background: url('imagens/fundo.jpg');
+    background: url('imagens/fundo_2.jpg') no-repeat;
     background-size: cover;
 }
 #container{
-    background: linear-gradient(-45deg, #0DDE3D,#009121);
+    background: linear-gradient(-45deg, #415D2A,#35542A);
     width: 450px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px #00912281;
+    box-shadow: 0px 0px 20px #35542A;
     position: absolute;
     top: 50%;
     left:3%;
@@ -54,8 +54,16 @@ body{
 .entrada_dados #iresultado{
     height: 36px;
     width: 60px;
-    background-color: #02deaebb;
+    background-color: #91A87E;
+    font: bold 12pt Arial, Helvetica, sans-serif;
+    text-align: right;
+
 }
+.entrada_dados #aviso{
+    font: bold 14pt Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+}
+
 .entrada_dados #iresultado, #aviso{
     margin-top: 20px;
 }
@@ -90,10 +98,13 @@ body{
 .pessoa{
     width: 350px;
     height: 30px;
+    padding: 5px;
+    font: bold 12pt Arial, Helvetica, sans-serif;
 }
 .pessoa:nth-child(odd){
     background-color: white;
 }
 .pessoa:nth-child(even){
-    background-color: #009121;
+    background-color: #91A87E;
+    color: white;
 }
