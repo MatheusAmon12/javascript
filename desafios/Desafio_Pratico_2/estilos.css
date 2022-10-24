@@ -24,6 +24,9 @@
         top: 50%;
         left:50%;
         transform: translate(-50%, -50%);
+
+        transition: width 0.3s, heigth 0.3s;
+        transition-timing-function: ease;
     }
     
     #titulo{

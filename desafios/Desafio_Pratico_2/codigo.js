@@ -15,26 +15,35 @@ botaoEnviar.addEventListener('click', function(event){
     let vIdade = idade.value
     let vPeso = peso.value
     let vAltura = altura.value
-    let imc = (vPeso / (vAltura ** 2)).toFixed(1)
 
-    resultado.value = imc
-    let situacao = situacaoDoPeso(imc)
-    aviso.textContent = situacao
+    if (vPeso == 0 || vAltura == 0){
+        aviso.textContent = 'ERRO! Não deixe nada em branco, verifique os campos.'
+        aviso.style.color = 'red'
+    } else{
+        let imc = (vPeso / (vAltura ** 2)).toFixed(1)
 
-    let pessoa = {
-        nome: vNome,
-        idade: vIdade,
-        peso: vPeso,
-        altura: vAltura,
-        imc: imc,
-        situacao: situacao
+        resultado.value = imc
+        let situacao = situacaoDoPeso(imc)
+        aviso.textContent = situacao
+        aviso.style.color = 'black'
+
+        let pessoa = {
+            nome: vNome,
+            idade: vIdade,
+            peso: vPeso,
+            altura: vAltura,
+            imc: imc,
+            situacao: situacao
+        }
+
+        dadosFicha[1].textContent = pessoa.nome
+        dadosFicha[2].textContent = pessoa.idade + ' anos'
+        dadosFicha[3].textContent = pessoa.peso + ' Kg'
+        dadosFicha[4].textContent = pessoa.altura + ' m'
+        dadosFicha[5].textContent = pessoa.imc + " " + pessoa.situacao
     }
 
-    dadosFicha[1].textContent = pessoa.nome
-    dadosFicha[2].textContent = pessoa.idade + ' anos'
-    dadosFicha[3].textContent = pessoa.peso + ' Kg'
-    dadosFicha[4].textContent = pessoa.altura + ' m'
-    dadosFicha[5].textContent = pessoa.imc + " " + pessoa.situacao
+    
 
     event.preventDefault()
 })
