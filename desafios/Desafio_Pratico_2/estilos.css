@@ -8,103 +8,211 @@
     font-family: 'Bebas Neue', cursive;
 }
 /*#0B132B #1C2541 #3A506B #00A9A5 #35542A*/
-body{
-    background: url('imagens/fundo_2.jpg') no-repeat;
-    background-size: cover;
-}
-#container{
-    background: linear-gradient(-45deg, #415D2A,#35542A);
-    width: 450px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px #35542A;
-    position: absolute;
-    top: 50%;
-    left:3%;
-    transform: translate(0%, -50%);
-}
 
-#titulo{
-    padding-left: 30px;
-    padding-top: 30px;
-    color: white;
-    font-size: 2.8em;
-    font-weight: lighter;
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(-45deg, #415D2A,#35542A);
+    }
+    #container{
+        background: white;
+        width: 60vw;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #titulo{
+        padding-left: 8%;
+        padding-top: 8%;
+        color: #35542A;
+        font-size: 2.6em;
+        font-weight: lighter;
+    }
+    
+    #formulario{
+        margin: auto;
+        width: 45vw;
+    }
+    
+    .entrada_dados label{
+        display: block;
+        margin-top: 10px;
+        color: #35542A;
+        font: normal 1.2em 'Roboto', sans-serif;
+    }
+    .entrada_dados input:not(#iresultado){
+        width: 45vw;
+        height: 30px;
+        padding-left: 4%;
+        font:12pt Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    }
+    .entrada_dados #iresultado{
+        height: 4vh;
+        width: 10vw;
+        background-color: #91A87E;
+        font: bold 12pt Arial, Helvetica, sans-serif;
+        text-align: center;    
+    }
+    .entrada_dados #aviso{
+        font: bold 14pt Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+    }
+    
+    .entrada_dados #iresultado, #aviso{
+        margin-top: 20px;
+    }
+    .entrada_dados #iresultado::placeholder{
+        text-align: center;
+        font-size: 18px;
+    }
+    .entrada_dados #btnEnviar, #btnLimpar{
+        margin-top: 10px;
+        padding: 2.5%;
+        font: normal 16px Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .entrada_dados > span button:hover{
+        background-color: #009121;
+        color: white;  
+    }
+    
+    #ficha{
+        width: 45vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #ficha #id{
+        font: bold 1.6em Arial, Helvetica, sans-serif;
+        height: 50px;
+        padding: 10px;
+    }
+    .pessoa{
+        width: 45vw;
+        height: 30px;
+        padding: 5px;
+        font: bold 9pt Arial, Helvetica, sans-serif;
+    }
+    .pessoa:nth-child(odd){
+        background-color: #35542A;
+        color: white;
+    }
+    .pessoa:nth-child(even){
+        background-color: #91A87E;
+        color: white;
+    }
 }
-
-#formulario{
-    margin: auto;
-    width: 350px;
-}
-
-.entrada_dados label{
-    display: block;
-    margin-top: 10px;
-    color: white;
-    font: normal 1.2em 'Roboto', sans-serif;
-}
-.entrada_dados input:not(#iresultado){
-    width: 350px;
-    height: 35px;
-    padding-left: 10px;
-    font-size: 15pt;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.entrada_dados #iresultado{
-    height: 36px;
-    width: 60px;
-    background-color: #91A87E;
-    font: bold 12pt Arial, Helvetica, sans-serif;
-    text-align: right;
-
-}
-.entrada_dados #aviso{
-    font: bold 14pt Arial, Helvetica, sans-serif;
-    padding-left: 5px;
-}
-
-.entrada_dados #iresultado, #aviso{
-    margin-top: 20px;
-}
-.entrada_dados #iresultado::placeholder{
-    text-align: center;
-    font-size: 18px;
-}
-.entrada_dados #btnEnviar, #btnLimpar{
-    margin-top: 10px;
-    padding: 8px;
-    font: normal 16px Arial, Helvetica, sans-serif;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-.entrada_dados > span button:hover{
-    background-color: #009121;
-    color: white;  
-}
-
-#ficha{
-    width: 350px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-#ficha #id{
-    font: bold 1.6em Arial, Helvetica, sans-serif;
-    height: 50px;
-    padding: 10px;
-}
-.pessoa{
-    width: 350px;
-    height: 30px;
-    padding: 5px;
-    font: bold 12pt Arial, Helvetica, sans-serif;
-}
-.pessoa:nth-child(odd){
-    background-color: white;
-}
-.pessoa:nth-child(even){
-    background-color: #91A87E;
-    color: white;
+@media screen and (min-width: 993px) {
+    body{
+        background: url('imagens/fundo_2.jpg') no-repeat;
+        background-size: cover;
+    }
+    #container{
+        background: linear-gradient(-45deg, #415D2A,#35542A);
+        width: 450px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px #35542A;
+        position: absolute;
+        top: 50%;
+        left:3%;
+        transform: translate(0%, -50%);
+    }
+    
+    #titulo{
+        padding-left: 30px;
+        padding-top: 30px;
+        color: white;
+        font-size: 2.8em;
+        font-weight: lighter;
+    }
+    
+    #formulario{
+        margin: auto;
+        width: 350px;
+    }
+    
+    .entrada_dados label{
+        display: block;
+        margin-top: 10px;
+        color: white;
+        font: normal 1.2em 'Roboto', sans-serif;
+    }
+    .entrada_dados input:not(#iresultado){
+        width: 350px;
+        height: 35px;
+        padding-left: 10px;
+        font-size: 15pt;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .entrada_dados #iresultado{
+        height: 36px;
+        width: 60px;
+        background-color: #91A87E;
+        font: bold 12pt Arial, Helvetica, sans-serif;
+        text-align: right;
+    
+    }
+    .entrada_dados #aviso{
+        font: bold 14pt Arial, Helvetica, sans-serif;
+        padding-left: 5px;
+    }
+    
+    .entrada_dados #iresultado, #aviso{
+        margin-top: 20px;
+    }
+    .entrada_dados #iresultado::placeholder{
+        text-align: center;
+        font-size: 18px;
+    }
+    .entrada_dados #btnEnviar, #btnLimpar{
+        margin-top: 10px;
+        padding: 8px;
+        font: normal 16px Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    .entrada_dados > span button:hover{
+        background-color: #009121;
+        color: white;  
+    }
+    
+    #ficha{
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #ficha #id{
+        font: bold 1.6em Arial, Helvetica, sans-serif;
+        height: 50px;
+        padding: 10px;
+    }
+    .pessoa{
+        width: 350px;
+        height: 30px;
+        padding: 5px;
+        font: bold 12pt Arial, Helvetica, sans-serif;
+    }
+    .pessoa:nth-child(odd){
+        background-color: white;
+    }
+    .pessoa:nth-child(even){
+        background-color: #91A87E;
+        color: white;
+    }
 }
