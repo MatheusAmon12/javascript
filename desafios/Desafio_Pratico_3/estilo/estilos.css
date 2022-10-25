@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+@root{
+   /*#42575C #5FC7E1 #9ED0DC #27515C #799FA8*/ 
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #container{
+        background: green;
+        width: 60vw;
+        height: 45vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #titulo{
+        padding: 5%;
+        font-size: 20pt;
+        font-weight: 500;
+    }
+    
+    #formulario{
+        background-color: red;
+        width: 30vw;
+        height: 25vh;
+        margin: auto;
+    }
+    
+    #formulario label{
+        display: block;
+        font-weight: 400;
+
+    }
+    
+    #formulario input{
+        width: 20vw;
+        height: 4vh;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+    #conjuntoBtn{
+        display: block;
+        text-align: center;
+    }
+
+    #btnLimpar, #btnEnviar{
+        padding: 5%;
+        border: none;
+        border-radius: 8px;
+        font-weight: 400;
+    }
+
+    #secao{
+        background-color: blue;
+        width: 30vw;
+        margin: auto;
+        text-align: center;
+    }
+
+    #imedia{
+        margin-left: 10px;
+        width: 12vw;
+        height: 4vh;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #resultado{
+        width: 30vw;
+        height: 5vh;
+        margin: auto;
+        background-color: wheat;
+    }
+
+    
+}
