@@ -2,8 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-@root{
-   /*#42575C #5FC7E1 #9ED0DC #27515C #799FA8*/ 
+:root{
+   --cor_1: #42575C;
+   --cor_2: #9ED0DC;
+   --cor_3: #5FC7E1;
+   --cor_4: #27515C;
+   --cor_5: #799FA8;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -13,9 +17,13 @@
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
     }
-    
+    body{
+        background: #27515C;
+    }
     #container{
-        background: green;
+        background: #42575C;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
         width: 60vw;
         height: 45vh;
         position: absolute;
@@ -28,10 +36,10 @@
         padding: 5%;
         font-size: 20pt;
         font-weight: 500;
+        color: #5FC7E1;
     }
     
     #formulario{
-        background-color: red;
         width: 30vw;
         height: 25vh;
         margin: auto;
@@ -40,6 +48,7 @@
     #formulario label{
         display: block;
         font-weight: 400;
+        color: #9ED0DC;
 
     }
     
@@ -65,10 +74,13 @@
     }
 
     #secao{
-        background-color: blue;
         width: 30vw;
         margin: auto;
         text-align: center;
+    }
+
+    #secao label{
+        color: #799FA8;
     }
 
     #imedia{
@@ -84,7 +96,6 @@
         width: 30vw;
         height: 5vh;
         margin: auto;
-        background-color: wheat;
     }
 
     
