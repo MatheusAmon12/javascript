@@ -14,19 +14,20 @@
             <label for="in1">Nota 1</label>
             <input type="number" name="n1" id="in1">
             <label for="in2">Nota 2</label>
-            <input type="number" name="n2" id="in2">
+            <input type="number" name="n2" id="in2" onblur="validarNumero(this)">
             <span id="conjuntoBtn">
                 <button id="btnEnviar">Enviar</button>
-                <button id="btnLimpar">Limpar</button>
+                <button id="btnLimpar" type="reset">Limpar</button>
             </span>
         </form>
         <section id="secao">
             <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" placeholder="0.0" disabled>
+            <input type="number" name="media" id="imedia" placeholder="0.0" disabled readonly>
         </section>
         <div id="resultado">
-            
+            <input type="text" name="situacao" class='' id="isituacao" placeholder="Situação" disabled readonly>
         </div>
+        <p id="aviso" class=""></p>
     </main>
     <script src="codigo/codigo.js"></script>
 </body>

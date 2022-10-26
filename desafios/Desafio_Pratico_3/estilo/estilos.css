@@ -8,6 +8,9 @@
    --cor_3: #5FC7E1;
    --cor_4: #27515C;
    --cor_5: #799FA8;
+   --cor_6: #B5DBCC;
+   --cor_7: #B45559;
+   --cor_8: #FFE879;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -25,7 +28,7 @@
         border-radius: 8px;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
         width: 60vw;
-        height: 45vh;
+        height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -55,7 +58,7 @@
     #formulario input{
         width: 20vw;
         height: 4vh;
-        margin-bottom: 10px;
+        margin-bottom: 10%;
         border: none;
         border-radius: 5px;
 
@@ -70,12 +73,22 @@
         padding: 5%;
         border: none;
         border-radius: 8px;
+        cursor: pointer;
         font-weight: 400;
+    }
+
+    #btnLimpar:hover, #btnEnviar:hover{
+        background-color: var(--cor_3);
+        font-weight: 500;
+        color: white;
+        border: 2px solid var(--cor_3);
     }
 
     #secao{
         width: 30vw;
         margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-align: center;
     }
 
@@ -89,14 +102,50 @@
         height: 4vh;
         border: none;
         border-radius: 5px;
+    }
+
+    #imedia::placeholder{
         text-align: center;
     }
 
-    #resultado{
+    #resultado #isituacao{
+        display: block;
+        background-color: var(--cor_5);
         width: 30vw;
-        height: 5vh;
+        height: 30px;
         margin: auto;
+        margin-bottom: 20px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
     }
 
-    
+    #resultado #isituacao::placeholder{
+        text-align: center;
+        font: 12pt 'Roboto', sans-serif;
+    }
+
+    .aprovado{
+        background-color: red;
+    }
+
+    .reprovado{
+        background-color: var(--cor_7);
+    }
+
+    .recuperacao{
+        background-color: var(--cor_8);
+    }
+    .alerta{
+        width: 40vw;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        overflow-wrap: break-word;
+        font: 400 12pt 'Roboto', sans-serif;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
 }
