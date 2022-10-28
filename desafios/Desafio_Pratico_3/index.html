@@ -12,11 +12,11 @@
         <h1 id="titulo">Calcular Média</h1>
         <form action="#" id="formulario">
             <label for="in1">Nota 1</label>
-            <input type="number" name="n1" id="in1" min="0.0" max="10.0" autofocus>
+            <input type="number" name="n1" id="in1" min="0.0" max="10.0" autofocus required>
             <label for="in2">Nota 2</label>
-            <input type="number" name="n2" id="in2" onblur="validarNumero(this)" min="0.0" max="10.0">
+            <input type="number" name="n2" id="in2" onblur="validarNumero(this)" min="0.0" max="10.0" required>
             <span id="conjuntoBtn">
-                <button id="btnEnviar">Enviar</button>
+                <button id="btnEnviar" type="submit">Enviar</button>
                 <button id="btnLimpar" type="reset">Limpar</button>
             </span>
         </form>

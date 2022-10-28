@@ -110,7 +110,6 @@
 
     #resultado #isituacao{
         display: block;
-        background-color: var(--cor_5);
         width: 30vw;
         height: 30px;
         margin: auto;
@@ -122,11 +121,18 @@
 
     #resultado #isituacao::placeholder{
         text-align: center;
+        color: white;
         font: 12pt 'Roboto', sans-serif;
     }
 
+    #resultado #isituacao{
+        color: rgba(0, 0, 0, 0.671);
+        text-align: center;
+        font-weight: 500;
+    }
+
     .aprovado{
-        background-color: red;
+        background-color: var(--cor_6);
     }
 
     .reprovado{

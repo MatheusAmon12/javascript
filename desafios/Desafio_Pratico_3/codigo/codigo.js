@@ -65,7 +65,7 @@ btnEnviar.addEventListener('click', function(event){
     let nota_2 = parseFloat(cxNum2.value)
     let media = calcMedia(nota_1, nota_2)
     
-    if(isNan(media) || media < 0){
+    if(isNaN(media) || media < 0){
         cxSituacao.value = ''
     } else{
         cxMedia.value = parseFloat(media)
@@ -79,4 +79,5 @@ btnLimpar.addEventListener('click', function(){
     cxSituacao.classList.remove('aprovado')
     cxSituacao.classList.remove('reprovado')
     cxSituacao.classList.remove('recuperacao')
+    cxSituacao.value = ''
 })
