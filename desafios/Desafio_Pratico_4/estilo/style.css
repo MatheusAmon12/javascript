@@ -32,10 +32,11 @@
     font-size: 2.5em;
 }
 
-.centro > #btnSortear{
+.centro > #btnSortear, #btnReset{
     width: 30vw;
     max-width: 220px;
     height: 5vh;
+    margin-bottom: 5px;
     background-color: #D31919;
     color: white;
     border: none;
@@ -43,7 +44,7 @@
     cursor: pointer;
 }
 
-.centro > #btnSortear:hover{
+.centro > #btnSortear:hover, #btnReset:hover{
     background-color: #f73e3e;
     font-weight: bold;
 }
